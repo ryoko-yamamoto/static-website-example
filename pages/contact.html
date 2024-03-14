@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../contact.css" />
+    <title>Contact</title>
+    <style>
+      .linkedin {
+        width: 79px;
+        height: 70px;
+      }
+
+      .instagram {
+        width: 70px;
+        height: 70px;
+      }
+
+      .x {
+        width: 65px;
+        height: 65px;
+      }
+
+      .git-hub {
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+      <a href="../index.html">
+        <picture>
+          <img
+            class="logo"
+            src="../assets/logo/myjourney.png"
+            alt="my journey logo"
+          />
+        </picture>
+      </a>
+      <span class="spacer"></span>
+      <ul class="header-right">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li class="dropdown">
+          <a href="../pages/journey.html">Journey</a>
+          <ul id="services-menu">
+            <li><a href="./journey.html#canada">Canada</a></li>
+            <li><a href="./journey.html#article-usa">U.S.A</a></li>
+            <li><a href="./journey.html#turkey">Turkey</a></li>
+            <li><a href="./journey.html#eygpt">Eygpt</a></li>
+            <li><a href="./journey.html#philippines">Philippines</a></li>
+            <li><a href="./journey.html">Korea</a></li>
+            <li><a href="./journey.html#australia">Australia</a></li>
+          </ul>
+        </li>
+        <li id="last-item"><a href="#" id="current-page">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Header-->
+    <header>
+      <h1>Contact</h1>
+    </header>
+    <!--Main-->
+    <main>
+      <div class="contact-container">
+        <div class="contact-form">
+          <h2 class="section-title">＜Contact Form＞</h2>
+
+          <div id="name-field">
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input" name="name" required />
+          </div>
+
+          <div id="email-field">
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" required />
+          </div>
+
+          <div id="message-field">
+            <label for="message-input">Message</label>
+            <textarea
+              name="message"
+              id="message-input"
+              cols="30"
+              rows="8"
+            ></textarea>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+        <div class="contact-ietems">
+          <h3>QUESTIONS? LET'S CHAT!</h3>
+          <h4>SNS</h4>
+          <div class="sns-form">
+            <a href="#"
+              ><img
+                class="linkedin"
+                src="../assets/logo/linkedin.logo.png"
+                alt="Linked.in"
+            /></a>
+            <a href="#"
+              ><img
+                class="instagram"
+                src="../assets/logo/Instagram.logo.png"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img class="x" src="../assets/logo/x.logo.png" alt="X"
+            /></a>
+            <a href="https://github.com/ryoko-yamamoto"
+              ><img
+                class="git-hub"
+                src="../assets/logo/github.logo.png"
+                alt="git-hub"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <nav class="nav-footer" aria-label="footer navigation">
+        <ul class="footer-center">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li class="last-item"><a href="#">Cookies</a></li>
+        </ul>
+      </nav>
+      <span class="line"></span>
+      <p>&copy; 2024 My Journey</p>
+    </footer>
+  </body>
+</html>

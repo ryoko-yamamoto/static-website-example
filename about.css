@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navigation */
+nav {
+  background-color: rgb(77, 77, 77);
+  padding: 20px 32px;
+  min-height: 80px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.spacer {
+  width: 650px;
+}
+
+.header-right li {
+  font-size: 20px;
+}
+
+nav img {
+  max-height: 48px;
+}
+
+nav > a {
+  vertical-align: bottom;
+}
+
+nav ul {
+  margin-bottom: 17px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul,
+nav ul li,
+.spacer {
+  display: inline-block;
+}
+
+nav ul li a:link {
+  color: white;
+}
+
+#current-page {
+  color: aquamarine;
+  border-bottom: solid 1px aquamarine;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li a:hover,
+#current-page:hover {
+  color: green;
+}
+
+nav ul li a:active,
+#current-page:active {
+  color: yellow;
+}
+
+.last-item {
+  margin-right: 0px;
+}
+
+/*Dropdown Menu Elements*/
+.dropdown {
+  position: relative;
+}
+
+#services-menu {
+  position: absolute;
+  top: 125%;
+  left: 0;
+  z-index: 2;
+  padding-left: 16px;
+  background-color: #2c2c2c;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2vh);
+  transition: opacity 0.3s, transform 0.15s;
+}
+
+#services-menu a {
+  display: block;
+  white-space: nowrap;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.dropdown:hover #services-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Header */
+header {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* Main */
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px black;
+}
+
+.item-1,
+.item-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.textbox h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.textbox h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.textbox img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.textbox > p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+aside {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.personality {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 300px;
+}
+
+#title-personality {
+  background-color: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.personality > p {
+  display: flex;
+  border: solid 1px red;
+  background-color: pink;
+  color: rgb(255, 0, 179);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.favorite-food {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.title-card > p {
+  font-size: 25px;
+}
+
+.item-cards > img {
+  flex-wrap: wrap;
+  width: 120px;
+  height: 120px;
+}
+
+.item-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+#order3 {
+  order: 1;
+  align-self: center;
+}
+
+/* Footer*/
+footer {
+  background-color: rgb(77, 77, 77);
+  text-align: center;
+  padding: 25px 50px;
+}
+
+footer p {
+  color: white;
+  margin-top: 15px;
+}
+
+.nav-footer {
+  padding: 5px;
+  min-height: 0;
+}
+
+.line {
+  display: inline-block;
+  border: 1px solid white;
+  width: 100%;
+}
